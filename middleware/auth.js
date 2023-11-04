@@ -6,7 +6,6 @@ const userSchema=require('../model/userModel');
     const auth = (req, res, next) => {
       const token = req.cookies.jwt;    
       if (!token) {
-          alert("Please Login");
         return res.redirect('/login');
       }
     
